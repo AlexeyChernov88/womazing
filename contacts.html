@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WOOMAZING</title>
+	<meta name="description" content="Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!">
+	<meta name="keywords" content="магазин, одежда, шопинг, красота, мода">
+	<!-- OG Tags -->
+	<meta property="og:title" content="WOOMAZING">
+	<meta property="og:description" content="Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://sitename.ru/img/preview.jpg">
+	<meta property="og:site_name" content="WOOMAZING">
+	<!-- Favicon & Theme Color -->
+	<meta name="theme-color" content="#6E9C9F">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+	<!-- Slick CSS -->
+	<link rel="stylesheet" href="assets/js/slick/slick.css">
+	<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/home/logo.svg" alt="логотип">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+	<header class="header header-transparent" id="header">
+		<div class="main-header header-sticky">  <!--  -->
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-3">
+						<a href="index.html" class="logo d-block"></a>
+					</div>
+					<div class="col-7 col-xl-5 d-flex justify-content-end justify-content-lg-start">
+						<button type="button" class="d-lg-none d-block humb"></button>
+						<nav>
+							<div class="block-menu  f-left d-lg-block">
+								<button type="button" class="close d-block d-lg-none mx-auto" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<ul class="d-lg-flex menu">
+									<li class="menu__item">
+										<a href="index.html" class="menu__link ">
+											Главная
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="shop.html" class="menu__link">
+											Магазин
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="brand.html" class="menu__link">
+											О бренде
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="contacts.html" class="menu__link menu__link_active">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="col-2 d-flex col-xl-4 justify-content-end">
+						<ul class="links d-flex">
+							<li class="links__item links__item_call d-none d-md-block">
+								<button type="button" class=" links__item_phone-icon d-block"></button>
+							</li>
+							<li class="links__item links__item_number d-none d-xl-block">
+								<a href="tel:+74958235412" class="links__item_number-link">
+										+7 (495) 823-54-12
+								</a>
+							</li>
+							<li class="links__item links__item_cart">
+								<a href="cart.html" class="links__item_cart-icon d-block">
+								</a>
+								<span class="links__item_cart-number d-none">3</span>
+							</li>
+						</ul>			
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="wrapper-modal" id="wrapper-modal">
+			<div  class="overlay-form" id="overlay-form"></div>
+			<div class="modal-form form-val" id="modal-form">
+				<button type="button" class="modal-form-close" id="modal-form-close"></button>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<h3 class="mini_title form-call-title">Заказать обратный звонок</h3>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<form action="mail.php" class="form-call form-val" id="form-call">
+								<input type="text" class="form-call__input" placeholder="Имя" name="firstName">
+								<input type="text" class="form-call__input" placeholder="E-mail" name="adressEmail">
+								<input type="text" class="form-call__input" placeholder="Телефон" name="phoneNumber">
+								<button type="submit" class="form-call__btn btn btn_bg">Заказать звонок</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-modal-ok" id="wrapper-modal-ok">
+			<div  class="overlay-ok" id="overlay-ok"></div>
+			<div class="modal-ok" id="modal-ok">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 mx-auto">
+							<h3 class="mini_title modal-ok-title">Отлично! Мы вам скоро перезвоним</h3>
+							<button type="button" class="btn modal-ok-btn" id="modal-ok-btn">Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		<section class="offer-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="offer-page_title">
+							Контакты
+						</h1>
+						<div class="navigation-block d-none d-lg-flex">
+							<a href="index.html" class="navigation-block__link d-block">Главная</a>
+							<span class="navigation-block__line d-block"></span>
+							<span class="navigation-block__text d-block">Контакты</span>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<section class="map" id="map">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="map-block">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts-links" id="contacts-links">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="contacts-block">
+							<h5 class="contacts-block__title">Телефон</h5>
+							<a href="tel:+74958235412" class="contacts-block__link d-block">
+								+7 (495) 823-54-12
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="contacts-block">
+							<h5 class="contacts-block__title">E-mail</h5>
+							<a href="mailto:hello@womazing.com" class="contacts-block__link d-block">
+								hello@womazing.com
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-6">
+						<div class="contacts-block contacts-block_adress">
+							<h5 class="contacts-block__title">Адрес</h5>
+							<p class="contacts-block__text d-block">
+								г. Москва. 3-я улица Строителей. 25
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts-form" id="contacts-form">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="mini_title ">Напишите нам</h3>
+						<form action="mail.php" class="form-write form-val
+						d-block" id="form-write">
+							<input type="text" class="form-write__input d-block" placeholder="Имя" name="firstName">
+							<input type="text" class="form-write__input d-block" placeholder="E-mail" name="adressEmail">
+							<input type="text" class="form-write__input d-block" placeholder="Телефон" name="phoneNumber">
+							<textarea type="textarea" class="form-write__textarea d-block" placeholder="Сообщение" name="mesageText"></textarea>
+							<button type="submit" class="form-write__btn btn btn_bg d-block">Заказать звонок</button>
+							<span class="form-write__ok d-block">Сообщение успешно отправлено</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row flex-column flex-sm-row">
+				<div class="col-12 d-flex justify-content-center justify-content-xl-start col-lg-3">
+					<div class="footer-links">
+						<a href="index.html" class="footer-links__logo logo d-block"></a>
+						<span class="footer-links__text d-block">
+							© Все права защищены
+						</span>
+						<a href="#" class="footer-links__link d-block">
+							Политика конфиденциальности
+						</a>
+						<a href="#" class="footer-links__link d-block">
+							Публичная оферта
+						</a>
+					</div>
+				</div>
+				<div class="col-12 d-flex justify-content-center justify-content-lg-start col-lg-6">
+					<nav>
+						<ul class="d-block d-lg-flex menu footer-menu">
+							<li class="menu__item footer-menu__item">
+								<a href="index.html" class="menu__link">
+									Главная
+								</a>
+							</li>
+							<li class="menu__item footer-menu__item">
+								<a href="shop.html" class="menu__link">
+									Магазин
+								</a>
+								<ul class="d-none d-lg-block footer-menu__mini">
+									<li class="footer-menu__mini-item">
+										<a href="shop-coats.html" class="footer-menu__mini-link menu__link">
+											Пальто
+										</a>
+									</li>
+									<li class="footer-menu__mini-item">
+										<a href="shop-sweatshirts.html" class="footer-menu__mini-link menu__link">
+											Свитшоты
+										</a>
+									</li>
+									<li class="footer-menu__mini-item">
+										<a href="shop-сardigans.html" class="footer-menu__mini-link menu__link">
+											Кардиганы
+										</a>
+									</li>
+									<li class="footer-menu__mini-item">
+										<a href="shop-hoodies.html" class="footer-menu__mini-link menu__link">
+											Толстовки
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item footer-menu__item">
+								<a href="brand.html" class="menu__link">
+									О бренде
+								</a>
+							</li>
+							<li class="menu__item footer-menu__item">
+								<a href="contacts.html" class="menu__link menu__link_active">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-12 d-flex justify-content-center justify-content-lg-end col-lg-3">
+					<ul class="footer-contact">
+						<li class="footer-contact__item footer-contact__item_tel d-lg-flex justify-content-center justify-content-lg-end">
+							<a href="tel:+74958235412" class="footer-contact__link d-block">
+								+7 (495) 823-54-12
+							</a>
+						</li>
+						<li class="footer-contact__item footer-contact__item_mail d-lg-flex justify-content-center justify-content-lg-end">
+							<a href="mailto:hello@womazing.com" class="footer-contact__link d-block">
+								hello@womazing.com
+							</a>
+						</li>
+						<li class="footer-contact__item footer-contact__item_social d-flex d-lg-flex justify-content-center justify-content-lg-end">
+							<!--noindex--><a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" class="footer-contact__social footer-contact__social_instagram d-block">
+							</a><!--noindex-->
+							<!--noindex--><a href="https://ru-ru.facebook.com/" rel="nofollow noopener noreferrer" target="_blank" class="footer-contact__social footer-contact__social_facebook d-block">
+							</a><!--noindex-->
+							<!--noindex--><a href="https://twitter.com/?lang=ru" rel="nofollow noopener noreferrer" target="_blank" class="footer-contact__social footer-contact__social_twitter d-block">
+							</a><!--noindex-->
+						</li>
+						<li class="footer-contact__item-pay d-flex justify-content-center justify-content-lg-end">
+							<span class="footer-contact__pay d-block"> </span>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Jquery, Slick, Bootstrap -->
+    
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+	<script src="./assets/js/slick/slick.min.js"></script>
+    
+    <!-- Main JS -->	
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
